@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ماذا لو؟ عُمان | مختبر القرارات</title>
+<style>
+:root{--bg:#071b27;--panel:#102c3a;--panel2:#153746;--teal:#42e0c0;--mint:#a8f3df;--text:#f4fbff;--muted:#b3c9d2;--line:#28505f;--gold:#ffd477;--blue:#76baff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 10% 0%,#164758 0,transparent 30%),linear-gradient(145deg,#071b27,#0b2634 60%,#102d39);font-family:Tahoma,Arial,sans-serif;color:var(--text);min-height:100vh}
+.wrap{max-width:1120px;margin:auto;padding:24px 18px 40px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--teal),#8cbfff);color:#08212b;display:grid;place-items:center;font-size:25px;font-weight:900;box-shadow:0 8px 30px #42e0c033}.brand h1{font-size:22px;margin:0}.brand p{margin:4px 0 0;color:var(--muted);font-size:12px}.tag{border:1px solid #3a6977;background:#102d39;border-radius:99px;padding:9px 13px;font-size:12px;color:var(--mint)}
+.hero{padding:42px 0 26px;display:grid;grid-template-columns:1.25fr .75fr;gap:25px;align-items:center}.eyebrow{color:var(--teal);font-size:13px;font-weight:bold;letter-spacing:.3px}.hero h2{font-size:clamp(30px,4vw,48px);line-height:1.25;margin:12px 0}.hero h2 span{color:var(--teal)}.hero p{color:var(--muted);line-height:1.9;margin:0;max-width:650px}.visual{min-height:205px;border:1px solid #2b5867;border-radius:26px;background:linear-gradient(145deg,#163d4b,#0c2633);padding:22px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.visual:after{content:"";position:absolute;width:180px;height:180px;border:1px solid #42e0c044;border-radius:50%;left:-35px;top:-50px;box-shadow:0 0 0 22px #42e0c00b,0 0 0 45px #42e0c009}.visual .big{font-size:42px;font-weight:900;color:var(--teal);position:relative;z-index:1}.visual .small{font-size:13px;color:var(--muted);line-height:1.8;position:relative;z-index:1}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:14px 0}.section-head h3{margin:0;font-size:21px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.tab{background:#0d2632;color:var(--muted);border:1px solid var(--line);border-radius:12px;padding:12px 15px;cursor:pointer;font:inherit;font-size:14px}.tab.active{background:var(--teal);color:#06212a;border-color:var(--teal);font-weight:bold}.work{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}.panel{border:1px solid var(--line);background:linear-gradient(160deg,#102d3a,#0c2531);border-radius:20px;padding:22px}.panel h3{margin:0 0 5px;font-size:18px}.sub{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 20px}.field{margin:17px 0}.field label{display:flex;justify-content:space-between;gap:12px;font-size:13px;margin-bottom:9px;color:#e5f5f9}.field output{color:var(--teal);font-weight:bold}.field input[type=range]{width:100%;accent-color:var(--teal);cursor:pointer}.field input[type=number]{width:100%;border:1px solid #35606e;background:#071e29;color:white;padding:12px;border-radius:10px;font:inherit}.hint{color:#8eabb7;font-size:11px;margin-top:6px}.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.metric{padding:17px;border:1px solid #28515f;border-radius:15px;background:#0b2531;min-height:125px}.metric .label{color:var(--muted);font-size:12px;line-height:1.7}.metric .value{font-size:clamp(21px,2.6vw,31px);font-weight:900;color:var(--teal);margin:12px 0 5px;overflow-wrap:anywhere}.metric .unit{color:#9db7c1;font-size:11px}.compare{margin-top:14px;border:1px solid #28515f;border-radius:15px;padding:16px;background:#0a222e}.compare-title{font-size:13px;font-weight:bold;margin-bottom:14px}.barrow{margin:12px 0}.barlabel{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-bottom:7px}.bar{height:10px;background:#1b3d4a;border-radius:99px;overflow:hidden}.fill{height:100%;border-radius:99px;transition:width .25s}.before{background:#7292a1}.after{background:var(--teal)}.insight{margin-top:14px;padding:14px 15px;border-radius:13px;background:#123d40;border:1px solid #277b71;color:#d7fff3;font-size:13px;line-height:1.8}.assumptions{margin-top:18px;padding:16px;border:1px dashed #37616d;border-radius:15px;color:var(--muted);font-size:12px;line-height:1.9}.assumptions strong{color:var(--gold)}.footer{margin-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8eabb7;font-size:11px;border-top:1px solid #244754;padding-top:17px}.btn{border:0;background:var(--teal);color:#06212a;border-radius:11px;padding:11px 14px;font:inherit;font-weight:bold;cursor:pointer}.btn.secondary{background:transparent;color:var(--mint);border:1px solid #37616d}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.hidden{display:none!important}
+@media(max-width:780px){.hero,.work{grid-template-columns:1fr}.hero{padding-top:28px}.visual{min-height:160px}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{padding:17px 12px 30px}}
+@media(max-width:420px){.results{grid-template-columns:1fr}.panel{padding:16px}.metric{min-height:100px}}
+@media print{body{background:white;color:#142a33}.wrap{max-width:none}.panel,.visual,.metric,.compare{background:white;color:#142a33;border-color:#aaa}.hero p,.sub,.field label,.metric .label,.metric .unit,.barlabel,.assumptions,.footer{color:#333}.tabs,.actions{display:none}.hero{padding:15px 0}.visual{min-height:120px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><div class="logo">؟</div><div><h1>ماذا لو؟ عُمان</h1><p>مختبر تفاعلي لاستكشاف أثر القرارات</p></div></div>
+    <div class="tag">نموذج أولي تجريبي · Prototype</div>
+  </header>
+  <section class="hero">
+    <div><div class="eyebrow">غيّر القرار، واكتشف أثره.</div><h2>ماذا لو غيّرنا <span>شيئًا صغيرًا</span>؟</h2><p>منصة تفاعلية تساعدنا على فهم كيف يمكن لتغيّر عاداتنا اليومية أن يؤثر في الموارد والبيئة. عدّل الافتراضات وشاهد النتائج التقديرية مباشرة.</p></div>
+    <div class="visual"><div class="small">فكرة المشروع</div><div class="big">فكرة ← تجربة ← نتيجة</div><div class="small">لا نكتفي بتوقّع النتيجة؛ نغيّر المتغيرات ونقارن بين أكثر من سيناريو.</div></div>
+  </section>
+  <section>
+    <div class="section-head"><div><h3>مختبر السيناريوهات</h3><p>اختر موضوعًا، ثم حرّك المؤشرات لتجربة افتراضات مختلفة.</p></div></div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-mode="water" role="tab">💧 ترشيد المياه</button>
+      <button class="tab" data-mode="energy" role="tab">⚡ استهلاك الطاقة</button>
+      <button class="tab" data-mode="food" role="tab">🥗 هدر الطعام</button>
+    </div>
+    <div class="work">
+      <section class="panel">
+        <h3 id="inputTitle">غيّر الافتراضات</h3><p class="sub" id="inputSub">استخدم أرقامًا افتراضية أو قرّبها من حالة تريد دراستها.</p>
+        <div id="waterFields">
+          <div class="field"><label for="homes">عدد المنازل <output id="homesOut">500</output></label><input id="homes" type="range" min="10" max="5000" step="10" value="500"></div>
+          <div class="field"><label for="waterDaily">استهلاك المنزل يوميًا <output id="waterDailyOut">600 لتر</output></label><input id="waterDaily" type="range" min="100" max="2000" step="50" value="600"></div>
+          <div class="field"><label for="waterReduce">نسبة خفض الاستهلاك <output id="waterReduceOut">15%</output></label><input id="waterReduce" type="range" min="0" max="60" step="1" value="15"></div>
+          <div class="field"><label for="waterPrice">سعر المتر المكعب (ر.ع.) <output id="waterPriceOut">0.500</output></label><input id="waterPrice" type="range" min="0" max="2" step="0.05" value="0.5"><div class="hint">قيمة افتراضية قابلة للتعديل، وليست تعرفة رسمية.</div></div>
+        </div>
+        <div id="energyFields" class="hidden">
+          <div class="field"><label for="buildings">عدد المنازل/المباني <output id="buildingsOut">500</output></label><input id="buildings" type="range" min="10" max="5000" step="10" value="500"></div>
+          <div class="field"><label for="energyMonthly">استهلاك المبنى شهريًا <output id="energyMonthlyOut">900 kWh</output></label><input id="energyMonthly" type="range" min="100" max="3000" step="50" value="900"></div>
+          <div class="field"><label for="energyReduce">نسبة خفض الاستهلاك <output id="energyReduceOut">10%</output></label><input id="energyReduce" type="range" min="0" max="50" step="1" value="10"></div>
+          <div class="field"><label for="energyPrice">سعر الوحدة (ر.ع./kWh) <output id="energyPriceOut">0.025</output></label><input id="energyPrice" type="range" min="0.005" max="0.1" step="0.005" value="0.025"><div class="hint">سعر افتراضي للتجربة، وليس تعرفة رسمية.</div></div>
+        </div>
+        <div id="foodFields" class="hidden">
+          <div class="field"><label for="people">عدد الأشخاص <output id="peopleOut">1000</output></label><input id="people" type="range" min="50" max="10000" step="50" value="1000"></div>
+          <div class="field"><label for="foodWeekly">الطعام المهدور للشخص أسبوعيًا <output id="foodWeeklyOut">1.5 كجم</output></label><input id="foodWeekly" type="range" min="0.1" max="5" step="0.1" value="1.5"></div>
+          <div class="field"><label for="foodReduce">نسبة تقليل الهدر <output id="foodReduceOut">25%</output></label><input id="foodReduce" type="range" min="0" max="80" step="1" value="25"></div>
+        </div>
+        <div class="actions"><button class="btn" id="resetBtn">إعادة القيم الافتراضية</button><button class="btn secondary" id="printBtn">طباعة النتائج / حفظ PDF</button></div>
+      </section>
+      <section class="panel">
+        <h3 id="resultTitle">النتائج التقديرية</h3><p class="sub">تتغير النتائج تلقائيًا عند تعديل أي قيمة.</p>
+        <div class="results">
+          <div class="metric"><div class="label" id="metric1Label">التوفير اليومي</div><div class="value" id="metric1">45,000</div><div class="unit" id="metric1Unit">لتر يوميًا</div></div>
+          <div class="metric"><div class="label" id="metric2Label">التوفير السنوي</div><div class="value" id="metric2">16,425</div><div class="unit" id="metric2Unit">متر مكعب سنويًا</div></div>
+          <div class="metric"><div class="label" id="metric3Label">التوفير المالي السنوي</div><div class="value" id="metric3">8,212.500</div><div class="unit" id="metric3Unit">ريال عُماني تقديري</div></div>
+          <div class="metric"><div class="label" id="metric4Label">نسبة التغيير</div><div class="value" id="metric4">15%</div><div class="unit" id="metric4Unit">مقارنة بالاستهلاك الأساسي</div></div>
+        </div>
+        <div class="compare"><div class="compare-title">مقارنة قبل التغيير وبعده</div>
+          <div class="barrow"><div class="barlabel"><span id="beforeLabel">الاستهلاك الأساسي</span><span id="beforeValue">300,000 لتر/يوم</span></div><div class="bar"><div class="fill before" id="beforeBar" style="width:100%"></div></div></div>
+          <div class="barrow"><div class="barlabel"><span id="afterLabel">بعد الترشيد</span><span id="afterValue">255,000 لتر/يوم</span></div><div class="bar"><div class="fill after" id="afterBar" style="width:85%"></div></div></div>
+        </div>
+        <div class="insight" id="insight">💡 إذا خفّضت 500 منزل استهلاكها بنسبة 15%، فالتوفير اليومي التقديري هو 45,000 لتر.</div>
+        <div class="assumptions"><strong>ملاحظة منهجية:</strong> النتائج ناتجة عن معادلات حسابية مبنية على القيم التي يُدخلها المستخدم. هي تقديرات توضيحية وليست بيانات رسمية أو تنبؤات مؤكدة عن سلطنة عُمان. يفترض النموذج ثبات القيم طوال الفترة، ولا يأخذ في الحسبان اختلاف المواسم أو السلوك أو الرسوم الإضافية.</div>
+      </section>
+    </div>
+  </section>
+  <footer class="footer"><span>ماذا لو؟ عُمان · مشروع تعليمي تجريبي</span><span>إعداد: ____________</span><span>الإصدار 1.0</span></footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let mode='water';
+const defaults={homes:500,waterDaily:600,waterReduce:15,waterPrice:0.5,buildings:500,energyMonthly:900,energyReduce:10,energyPrice:0.025,people:1000,foodWeekly:1.5,foodReduce:25};
+const fields={water:['waterFields'],energy:['energyFields'],food:['foodFields']};
+function fmt(n,d=0){return Number(n).toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});}
+function val(id){return Number($(id).value);}
+function setOut(id,text){$(id+'Out').textContent=text;}
+function updateLabels(){
+ setOut('homes',fmt(val('homes'))+' منزل');setOut('waterDaily',fmt(val('waterDaily'))+' لتر');setOut('waterReduce',val('waterReduce')+'%');setOut('waterPrice',fmt(val('waterPrice'),3)+' ر.ع.');
+ setOut('buildings',fmt(val('buildings'))+' مبنى');setOut('energyMonthly',fmt(val('energyMonthly'))+' kWh');setOut('energyReduce',val('energyReduce')+'%');setOut('energyPrice',fmt(val('energyPrice'),3)+' ر.ع.');
+ setOut('people',fmt(val('people'))+' شخص');setOut('foodWeekly',fmt(val('foodWeekly'),1)+' كجم');setOut('foodReduce',val('foodReduce')+'%');
+}
+function metric(i,label,value,unit){$('metric'+i+'Label').textContent=label;$('metric'+i).textContent=value;$('metric'+i+'Unit').textContent=unit;}
+function bars(before,after,unit){
+ $('beforeValue').textContent=fmt(before,2)+' '+unit;$('afterValue').textContent=fmt(after,2)+' '+unit;
+ $('beforeBar').style.width='100%';$('afterBar').style.width=(before===0?0:Math.max(0,Math.min(100,after/before*100)))+'%';
+}
+function calc(){
+ updateLabels();
+ if(mode==='water'){
+  const n=val('homes'),daily=val('waterDaily'),r=val('waterReduce')/100,p=val('waterPrice');
+  const base=n*daily,saved=base*r,annualM3=saved*365/1000,money=annualM3*p,after=base-saved;
+  metric(1,'التوفير اليومي',fmt(saved),'لتر يوميًا');metric(2,'التوفير السنوي',fmt(annualM3,2),'متر مكعب سنويًا');metric(3,'التوفير المالي السنوي',fmt(money,3),'ريال عُماني تقديري');metric(4,'نسبة التغيير',fmt(r*100)+'%','انخفاض عن الاستهلاك الأساسي');
+  $('beforeLabel').textContent='الاستهلاك الأساسي';$('afterLabel').textContent='بعد الترشيد';bars(base,after,'لتر/يوم');
+  $('insight').textContent=`💡 إذا خفّض ${fmt(n)} منزل استهلاكها بنسبة ${fmt(r*100)}%، فقد يكون التوفير ${fmt(saved)} لتر يوميًا، أي ${fmt(annualM3,2)} متر مكعب خلال سنة.`;
+ }else if(mode==='energy'){
+  const n=val('buildings'),monthly=val('energyMonthly'),r=val('energyReduce')/100,p=val('energyPrice');
+  const base=n*monthly,saved=base*r,annual=saved*12,money=annual*p,after=base-saved;
+  metric(1,'التوفير الشهري',fmt(saved),'kWh شهريًا');metric(2,'التوفير السنوي',fmt(annual),'kWh سنويًا');metric(3,'التوفير المالي السنوي',fmt(money,3),'ريال عُماني تقديري');metric(4,'نسبة التغيير',fmt(r*100)+'%','انخفاض عن الاستهلاك الأساسي');
+  $('beforeLabel').textContent='الاستهلاك الشهري الأساسي';$('afterLabel').textContent='بعد خفض الاستهلاك';bars(base,after,'kWh/شهر');
+  $('insight').textContent=`💡 خفض استهلاك ${fmt(n)} مبنى بنسبة ${fmt(r*100)}% قد يوفر ${fmt(annual)} kWh سنويًا، وفق الافتراضات المختارة.`;
+ }else{
+  const n=val('people'),weekly=val('foodWeekly'),r=val('foodReduce')/100,base=n*weekly,saved=base*r,annual=saved*52,after=base-saved;
+  metric(1,'تقليل الهدر أسبوعيًا',fmt(saved,1),'كجم أسبوعيًا');metric(2,'تقليل الهدر سنويًا',fmt(annual,1),'كجم سنويًا');metric(3,'ما يعادل',fmt(annual/1000,2),'طن من الطعام سنويًا');metric(4,'نسبة التغيير',fmt(r*100)+'%','انخفاض عن الهدر الأساسي');
+  $('beforeLabel').textContent='الهدر الأسبوعي الأساسي';$('afterLabel').textContent='بعد تقليل الهدر';bars(base,after,'كجم/أسبوع');
+  $('insight').textContent=`💡 تقليل الهدر بنسبة ${fmt(r*100)}% لدى ${fmt(n)} شخص قد يمنع هدر ${fmt(annual,1)} كجم من الطعام خلال سنة.`;
+ }
+}
+function setMode(next){
+ mode=next;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
+ Object.keys(fields).forEach(k=>$(fields[k][0]).classList.toggle('hidden',k!==mode));
+ if(mode==='water'){$('inputSub').textContent='اختبر كيف يمكن لتغيير الاستهلاك اليومي أن يؤثر في كمية المياه والتكلفة التقديرية.';}
+ if(mode==='energy'){$('inputSub').textContent='اختبر سيناريوهات خفض استهلاك الكهرباء في مجموعة من المباني.';}
+ if(mode==='food'){$('inputSub').textContent='اختبر كيف يمكن لتغيير العادات أن يقلل كمية الطعام المهدور.';}
+ calc();
+}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
+Object.keys(defaults).forEach(id=>$(id).addEventListener('input',calc));
+$('resetBtn').addEventListener('click',()=>{Object.entries(defaults).forEach(([id,v])=>$(id).value=v);calc();});
+$('printBtn').addEventListener('click',()=>window.print());
+calc();
+</script>
+</body>
+</html>
